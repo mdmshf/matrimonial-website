@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>matrimonial..website</title>
+	<style type="text/css">
+		ul {list-style-type: none;}
+		.header img{display: block;margin: 0 auto 0 auto;}
+		.yourself textarea { width: 400px; height: 150px; border: 2px solid; margin-bottom: 25px; font-size: 24px; }
+		.family {border: 1px solid #dddddd; width: 400px; margin: 15px auto 0 auto;
+			 }
+		.family textarea { width: 300px; height: 50px; border: 2px solid; margin-bottom: 25px; font-size: 18px;}
+		.yourself {border: 1px solid #dddddd; width: 500px; margin: 15px auto 0 auto;
+			 }
+        li {padding: 0 0 15px 0;}
+        h3{ text-align:center;}
+        h2{ text-align:center;}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<img src ="bharat-matrimony-logo.gif">
+	</div>
+	<h2>Fill your Personal Information.... </h3><br>
+	<div class="family">
+		<form action="post.php" method="post">	
+			<ul>
+			<li><h3>Family Background.... </h3></li>
+			<li><label for="Father's Name">Father's Name:</label>
+			<input type="text" name="Father's Name" id="Father's Name"></li>
+			<li><label for="Father's Occupation">Father's Occupation:</label>
+			<input type="text" name="Father's Occupation" id="Father's Occupation"></li>
+			<li><label for="Mother's Name">Mother's Name:</label>
+			<input type="text" name="Mother's Name" id="Mother's Name"></li>
+			<li><label for="Mother's Occupation">Mother's Occupation:</label>
+			<input type="text" name="Mother's Occupation" id="Mother's Occupation"></li>
+			<li><label for="family type">Family type:</label>
+			<input type="radio" name="family type" value="Joint" checked="checked"/>Joint
+			<input type="radio" name="family type" value="Nuclear" checked="checked"/>Nuclear</li>
+			<li><label for="No. of Siblings">No. of Siblings:</label>
+			<input type="text" name="No. of Siblings" id="No. of Siblings"></li>
+			<li><label for="Mother Tounge">Mother Tounge:</label>
+			<input type="text" name="Mother Tounge" id="Mother Tounge"></li>
+			<li><label for="Address">Address:</label><br>
+			<textarea id="Address"></textarea></li>
+			</ul>
+		</form>
+	</div>
+	<div class="yourself">
+		<form action="post.php" method="post.php">
+			<ul>
+			<li><h3>About Yourself.... </h3></li>
+			<li><label for="Martial Status">Martial Status:</label>
+			<select name="Martial">
+				<option value="Martial">Select Your Martial Status:</option>
+				<option value="Married">Married</option>
+				<option value="Unmarried">Unmarried</option>
+				<option value="Divorce">Divorce</option>
+			</select></li>
+			<li><label for="Occupation">Occupation:</label>
+			<input type="text" name="Occupation" id="Occupation"></li>
+			<li><label for="Annual Income">Annual Income:</label>
+			<input type="text" name="Annual Income" id="Annual Income"></label></li>
+			<li><label for="Education">Education:</label>
+			<select name="edu">
+				<option value="select your eduacation level">Select your Eduacation level</option>
+				<option value="PHD">PHD</option>
+				<option value="Post Graduate">Post Graduate</option>
+				<option value="Graduate">Graduate</option>
+				<option value="12th">12th</option>
+				<option value="10th">10th</option>
+				<option value="Lower">Lower</option>
+				<option value="Iliterate">Iliterate</option>
+			</select></li>
+			<li><label for="Course">Specify Course:</label>
+			<input type="text" name="Course" id="Course"></li>
+			<li><label for="Height">Height in cm:</label>
+			<input type="text" name="Height" id="Height"></li>
+			<li><label for="Weight">Weight in kgs:</label>
+			<input type="text" name="Weight" id="Weight"></li>
+			<li><label for="Complexion">Complexion:</label>
+			<input type="text" name="Complexion" id="Complexion"></li>
+			<li><label for="Blood group">Blood group:</label>
+			<select name="Blood group">
+				<option value="Blood Group">Select Your Blood Group:</option>
+				<option value="A+">A+</option>
+				<option value="A-">A-</option>
+				<option value="B+">B+</option>
+				<option value="B-">B-</option>
+				<option value="AB+">AB+</option>
+				<option value="AB-">AB-</option>
+				<option value="O+">O+</option>
+				<option value="O-">O-</option>
+			</select></li>
+			<li><label>Smoking:</label>
+			<input type="radio" name="smoking" value="Yes" checked="checked"/>Yes
+			<input type="radio" name="smoking" value="No" checked="checked"/>No</li>
+			<li><label>Drinking:</label>
+			<input type="radio" name="drinking" value="Yes" checked="checked"/>Yes
+			<input type="radio" name="drinking" value="No" checked="checked"/>No</li>
+			<li><label for="Hobbies:">Hobbies:<label><br>
+			<textarea id="Hobbies:"></textarea></li>
+			<li><label for="Future Plan">Future Plan:</label><br>
+			<textarea id="Future Plan"></textarea></li>
+			<li><label for="About Yourself">About Yourself:</label>
+			<textarea id="About Yourself"></textarea></li>
+			<li><input type="submit" value="click to submit"></li>
+		</form>
+	</div>
+
+</body>
+</html>
